@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+	<div class="top-bar-mob">
+		<ul class="social-ul">
+			<li class="social-link"><i class="fab fa-facebook-f"></i></li>
+			<li class="social-link"><i class="fab fa-twitter"></i></li>
+			<li class="social-link"><i class="fab fa-instagram"></i></li>
+		</ul>
+	</div>
+  
+    			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				  <a class="navbar-brand" href="#"><img src="assets/img/logo-white.png" class="logo"></a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarNav">
+				    <ul class="navbar-nav ml-lg-auto">
+				      <li class="nav-item active">
+				        <a class="nav-link" href="#">Home</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#">About</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#">Tours</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#">Blog</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#">Contact</a>
+				      </li>
+				    </ul>
+				  </div>
+				  <div class="nav-right-social">
+					  <ul class="social-ul">
+						  <li class="social-link"><i class="fab fa-facebook-f"></i></li>
+						  <li class="social-link"><i class="fab fa-twitter"></i></li>
+						  <li class="social-link"><i class="fab fa-instagram"></i></li>
+					  </ul>
+				  </div>
+				</nav>
+
+    		</div>	
+
+    <div class="empty"></div>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <!-- <script>
+  	$(window).scroll(function(){
+		$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+    });
+  </script> -->
+
+  <!-- <script>
+  	$(document).ready(function(){
+	  $(window).scroll(function(){
+	  	var scroll = $(window).scrollTop();
+		  if (scroll > 50) {
+		  	$("nav").css({"backgroundColor" : "#ffffff", "position" : "fixed" , "width" : "100%" , "z-index" : "9999"});
+		    $("nav .logo").attr("src","assets/img/logo-dark.png")
+		    $("nav .logo").css("width", "80px")
+		    $(".navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link").css("color", "#333")
+		    $(".navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover").css("color" , "#333")
+		  }
+
+		  else{
+			  $("nav").css({"backgroundColor" : "transparent" , "position" : "relative"});
+			  $("nav .logo").attr("src","assets/img/logo-white.png")
+			  $("nav .logo").css("width", "100px")
+		  }
+	  })
+	})
+  </script> -->
+</body>
+</html>
