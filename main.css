@@ -91,6 +91,57 @@ nav{
 }
 
 
+.main-bg{
+	height: 70vh;
+	width: 100%;
+	background: url('assets/img/min.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: #00000069;
+	background-blend-mode: color;
+	overflow: hidden;
+	position: relative;
+}
+
+.banner-left{
+	position: relative;
+	z-index: 100;
+	padding-top: 100px;
+}
+
+.main-bg .banner-header{
+	color: #fff;
+	font-size: 60px;
+	font-family: montserrat;
+	font-weight: 700;
+
+}
+
+.main-bg .banner-text{
+	color: #fff;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: 'open sans';
+	font-weight: 400;
+	
+}
+
+
+
+
+@media (min-width: 1200px){
+    .main-bg:after{
+	content: "";
+	display: block;
+	background: #dd2732;
+	width: 1228px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: -540px;
+	transform: skew(20deg);
+}	
+}
 
 @media (min-width: 992px){
 .ml-lg-auto, .mx-lg-auto {
