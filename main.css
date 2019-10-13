@@ -9,6 +9,10 @@ a:hover{
 	text-decoration: none;
 }
 
+.container{
+
+}
+
 .no-padd{
 	padding-left: 0;
 	padding-right: 0;
@@ -33,9 +37,15 @@ a:hover{
 	background: #111111 !important;
 }
 
-.navbar-light .navbar-nav .nav-link{
-	color: #fff;
+
+
+.navbar-dark .navbar-nav .nav-link{
+	color: #ffffffe3;
 	text-transform: uppercase;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
+	color: #ffffff;
 }
 
 nav{
@@ -112,9 +122,9 @@ nav{
 .main-bg .banner-header{
 	color: #fff;
 	font-size: 60px;
-	font-family: montserrat;
+	font-family: oswald;
+	text-transform: uppercase;
 	font-weight: 700;
-
 }
 
 .main-bg .banner-text{
@@ -126,7 +136,25 @@ nav{
 	
 }
 
+.bttn{
+	display: inline-block;
+	color: #222;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	background: #fff;
+	border: 2px solid #fff;
+	padding: 8px 30px;
+	border-radius: 50px;
+	margin-top: 10px;
+	transition: .3s;
+}
 
+.bttn:hover{
+	color: #fff;
+	background: transparent;
+	border: 2px solid #fff;
+}
 
 
 @media (min-width: 1200px){
@@ -141,6 +169,10 @@ nav{
 	left: -540px;
 	transform: skew(20deg);
 }	
+
+    .container {
+    max-width: 1260px;
+}
 }
 
 @media (min-width: 992px){
