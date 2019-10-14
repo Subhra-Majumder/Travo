@@ -335,12 +335,12 @@ textarea {
 
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: red;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: red;
     text-shadow: none;
 }
 
@@ -394,18 +394,22 @@ a:hover{
 } */
 
 .bg-dark {
-	background: #111111 !important;
+	background: #ffffff !important;
 }
 
 
 
 .navbar-dark .navbar-nav .nav-link{
-	color: #ffffffe3;
+	color: #111111;
 	text-transform: uppercase;
 }
 
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
-	color: #ffffff;
+	color: #111111;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link{
+	color: #111111;
 }
 
 nav{
@@ -436,20 +440,20 @@ nav{
 }
 
 .nav-right-social .social-ul .social-link .fab{
-	background: #111;
+	background: #fff;
 	padding-top: 8px;
 	padding-left: 9px;
 	border-radius: 50px;
 	height: 30px;
 	width: 30px;
 	font-size: 14px;
-	color: #fff;
+	color: #111;
 	transition: .3s all;
 }
 
 .nav-right-social .social-ul .social-link .fab:hover{
-	background: rgb(255, 255, 255);
-	color: #111;
+	background: #111;
+	color: #fff;
 }
 
 .nav-right-social .social-ul .social-link .fa-facebook-f{	
@@ -469,7 +473,12 @@ nav{
 	background-position: center;
 	background-color: #000000b5;
 	background-blend-mode: color;
-	overflow: hidden;
+	/* overflow: hidden; */
+	position: relative;
+}
+
+.banner-left-block{
+	height: 70vh;
 	position: relative;
 }
 
@@ -479,6 +488,15 @@ nav{
 	/* padding-left: 0px; */
 	top: 50%;
 	transform: translateY(-50%);
+}
+
+.main-bg .top-text{
+	color: #fff;
+	font-family: montserrat;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	font-size: 16px;
+	letter-spacing: 5px;
 }
 
 .main-bg .banner-header{
@@ -501,17 +519,20 @@ nav{
 }
 
 .bttn{
-	display: inline-block;
+	display: block;
 	color: #222;
 	font-size: 14px;
 	font-weight: 600;
+	width: 160px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	background: #fff;
 	border: 2px solid #fff;
-	padding: 10px 30px;
+	padding: 10px 0px;
+	text-align: center;
 	border-radius: 50px;
 	/* margin-top: 10px; */
+	/* margin: 0 auto; */
 	transition: .3s;
 }
 
@@ -521,17 +542,59 @@ nav{
 	border: 2px solid #fff;
 }
 
+.form-box{
+	width: 70%;
+	background: #fff;
+	padding: 30px 30px;
+	margin-top: 100px;
+	margin-left: auto;
+	border-radius: 10px;
+	box-shadow: 0px 1px 10px #00000059;
+}
+
+.form-box .heading h4{
+	text-align: center;
+	font-family: oswald;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.form-control{
+	border: 2px solid #cacaca;
+}
+
+.submitNow{
+	display: block;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	width: 160px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	background: #2196f3;;
+	border: 2px solid #fff;
+	padding: 10px 0px;
+	text-align: center;
+	border-radius: 50px;
+	/* margin-top: 10px; */
+	 margin: 0 auto; 
+	transition: .3s;
+}
 
 @media (min-width: 1200px){
     .main-bg:after{
 	content: "";
 	display: block;
-	background: #dd2732;
+	/* 	background: linear-gradient(to right, #dd2732, #fff0); */
+	background: #2196f3;
 	width: 1228px;
 	height: 100%;
 	position: absolute;
 	top: 0;
 	left: -540px;
+	border-right: 10px solid #ffffff;
 	transform: skew(20deg);
 }	
 
@@ -554,7 +617,7 @@ nav{
 	nav::after{
 		content: "";
 		position: absolute;
-		background: #dd2732;
+		background: #2196f3;
 		display: block;
 		height:100px;
 		width: 400px;
@@ -573,6 +636,7 @@ nav{
 		display: block;
 		text-align: center;
 		padding: 5px 0;
+		background: #111;
 	}
 
 	.top-bar-mob .social-ul{
@@ -584,10 +648,45 @@ nav{
 	.top-bar-mob .social-ul .social-link{
 		display: inline-block;
 		margin-left: 10px;
+		color: #fff;
 	}
 
 	.no-padd-mob{
 		padding-left: 0;
 		padding-right: 0;
+	}
+
+	.banner-cont{
+		padding: 0 15px;
+	}
+}
+
+@media (max-width: 767px){
+	
+	.main-bg{
+		heiht: 85vh;
+	}
+
+	.main-bg .top-text{
+        text-align: center;
+	}
+	
+	.main-bg .banner-header{
+		text-align: center;
+	}
+
+	.main-bg .banner-text{
+		width: 100%;
+		text-align : center;
+	}
+
+	.bttn{
+		margin: 0 auto;
+	}
+
+	.form-box{
+		width: 100%;
+		margin-left: 0;
+		margin-top: -85px;
 	}
 }
