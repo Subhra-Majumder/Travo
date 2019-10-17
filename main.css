@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -365,6 +366,14 @@ textarea {
     padding: 0.2em 0;
 }
 
+.blueColor{
+	color: #2196f3;
+	font-family: oswald;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 600;
+}
+
 a:hover{
 	text-decoration: none;
 }
@@ -451,6 +460,15 @@ nav{
 	transition: .3s all;
 }
 
+.navbar-dark .navbar-toggler{
+	outline: none;
+}
+
+.navbar-dark .navbar-toggler .fas{
+	color: #2196f3;
+	font-size: 24px;
+}
+
 .nav-right-social .social-ul .social-link .fab:hover{
 	background: #111;
 	color: #fff;
@@ -528,7 +546,7 @@ nav{
 	letter-spacing: 1px;
 	background: #fff;
 	border: 2px solid #fff;
-	padding: 10px 0px;
+	padding: 12px 0px;
 	text-align: center;
 	border-radius: 50px;
 	/* margin-top: 10px; */
@@ -573,13 +591,13 @@ nav{
 	width: 160px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	background: #2196f3;;
+	background: #2196f3;
 	border: 2px solid #fff;
-	padding: 10px 0px;
+	padding: 12px 0px;
 	text-align: center;
 	border-radius: 50px;
 	/* margin-top: 10px; */
-	 margin: 0 auto; 
+	margin: 0 auto;
 	transition: .3s;
 }
 
@@ -628,6 +646,10 @@ nav{
 }
 
 @media (max-width: 992px){
+	.navbar-nav{
+        margin-top: 15px;
+ }
+	
 	.nav-right-social{
 		display: none;
 	}
@@ -635,7 +657,7 @@ nav{
 	.top-bar-mob{
 		display: block;
 		text-align: center;
-		padding: 5px 0;
+		padding: 10px 0;
 		background: #111;
 	}
 
@@ -664,7 +686,7 @@ nav{
 @media (max-width: 767px){
 	
 	.main-bg{
-		heiht: 85vh;
+		height: 85vh;
 	}
 
 	.main-bg .top-text{
