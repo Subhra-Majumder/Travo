@@ -686,7 +686,7 @@ nav{
 @media (max-width: 767px){
 	
 	.main-bg{
-		height: 85vh;
+		height: 100vh;
 	}
 
 	.main-bg .top-text{
@@ -698,8 +698,11 @@ nav{
 	}
 
 	.main-bg .banner-text{
-		width: 100%;
+		width: 95%;
 		text-align : center;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 30px;
 	}
 
 	.bttn{
@@ -709,6 +712,6 @@ nav{
 	.form-box{
 		width: 100%;
 		margin-left: 0;
-		margin-top: -85px;
+		margin-top: 0px;
 	}
 }
