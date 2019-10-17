@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="./node_modules/aos/dist/aos.css"/>
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -58,15 +59,15 @@
 	<div class="row header-row">
 		<div class="col-md-6 banner-left-block no-padd-mob">
 			<div class="banner-left">
-			<div class="top-text">Lorem</div>
-			<div class="banner-header">Lorem Ipsum</div>
-			<p class="banner-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, odit ipsa ab accusantium, saepe vero culpa est architecto necessitatibus facere impedit. Exercitationem consectetur vero a, explicabo quis itaque tenetur debitis.</p>
-			<a href="" class="bttn">Read More</a>
+			<div class="top-text"  data-aos="fade-right" data-aos-easing="ease-in">Lorem</div>
+			<div class="banner-header"  data-aos="fade-right" data-aos-easing="ease-in" data-aos-delay="200">Lorem Ipsum</div>
+			<p class="banner-text"  data-aos="fade-right" data-aos-easing="ease-in" data-aos-delay="300">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, odit ipsa ab accusantium, saepe vero culpa est architecto necessitatibus facere impedit. Exercitationem consectetur vero a, explicabo quis itaque tenetur debitis.</p>
+			<a href="" class="bttn"  data-aos="fade-right" data-aos-easing="ease-in" data-aos-delay="400">Read More</a>
 		</div>
 		</div>
 		<div class="col-md-6 banner-right-block">
 			<div class="banner-right">
-			<div class="form-box">
+			<div class="form-box" data-aos="fade-up" data-aos-easing="ease-in">
 				<div class="heading">
 					<h4>Enquire <span class="blueColor">Now</span></h4>
 				</div>
@@ -96,6 +97,7 @@
 
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./node_modules/aos/dist/aos.js"></script>
   <!-- <script>
   	$(window).scroll(function(){
 		$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
@@ -122,5 +124,10 @@
 	  })
 	})
   </script> -->
+
+  <script>
+  AOS.init();
+
+</script>
 </body>
 </html>
